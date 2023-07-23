@@ -67,13 +67,20 @@ const Home = () => {
             College Image Gallery
           </h1>
         </div>
-        <div> <PhotoGallery /> </div>
+        <div>
+          <PhotoGallery />
+        </div>
       </section>
 
       {/* Third sections */}
       <section className="my-20">
+        <div className="w-1/2 mx-auto py-16">
+          <h1 className=" border-b-2 border-t-2 py-5 lg:text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-950 to-red-500">
+          Research Paper Links
+          </h1>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className=" my_card bg-gradient-to-r from-gray-300 to-gray-100 text-gray-950 px-8 cursor-pointer " >
+          <div className=" my_card bg-gradient-to-r from-gray-300 to-gray-100 text-gray-950 px-8 cursor-pointer ">
             <span className="flex items-center gap-3 text-2xl font-bold hover:text-red-600 py-3">
               <span>
                 <FaGraduationCap className="text-3xl text-red-600" />
@@ -85,14 +92,16 @@ const Home = () => {
               sapiente doloremque mollitia aspernatur facilis labore officiis
               quas eveniet hic est?
             </p>
-            <Link to='/' className="flex items-center hover:text-red-600 text-lg py-4 gap-4">
+            <Link
+              to="/"
+              className="flex items-center hover:text-red-600 text-lg py-4 gap-4">
               <p>Undergraduate Education </p>
               <span>
-                <FaArrowRightLong className="text-red-600"/>
+                <FaArrowRightLong className="text-red-600" />
               </span>
             </Link>
           </div>
-          <div className=" my_card bg-gradient-to-r from-gray-300 to-gray-100 text-gray-950 px-8 cursor-pointer " >
+          <div className=" my_card bg-gradient-to-r from-gray-300 to-gray-100 text-gray-950 px-8 cursor-pointer ">
             <span className="flex items-center gap-3 text-2xl font-bold hover:text-red-600 py-3">
               <span>
                 <FaUserGraduate className="text-3xl text-red-600" />
@@ -104,14 +113,16 @@ const Home = () => {
               sapiente doloremque mollitia aspernatur facilis labore officiis
               quas eveniet hic est?
             </p>
-            <Link to='/' className="flex items-center hover:text-red-600 text-lg py-4 gap-4">
+            <Link
+              to="/"
+              className="flex items-center hover:text-red-600 text-lg py-4 gap-4">
               <p>Graduate Education </p>
               <span>
-                <FaArrowRightLong className="text-red-600"/>
+                <FaArrowRightLong className="text-red-600" />
               </span>
             </Link>
           </div>
-          <div className=" my_card bg-gradient-to-r from-gray-300 to-gray-100 text-gray-950 px-8 cursor-pointer " >
+          <div className=" my_card bg-gradient-to-r from-gray-300 to-gray-100 text-gray-950 px-8 cursor-pointer ">
             <span className="flex items-center gap-3 text-2xl font-bold hover:text-red-600 py-3">
               <span>
                 <FaBook className="text-3xl text-red-600" />
@@ -123,10 +134,12 @@ const Home = () => {
               sapiente doloremque mollitia aspernatur facilis labore officiis
               quas eveniet hic est?
             </p>
-            <Link to='/' className="flex items-center hover:text-red-600 text-lg py-4 gap-4">
+            <Link
+              to="/"
+              className="flex items-center hover:text-red-600 text-lg py-4 gap-4">
               <p>Lifelong learning </p>
               <span>
-                <FaArrowRightLong className="text-red-600"/>
+                <FaArrowRightLong className="text-red-600" />
               </span>
             </Link>
           </div>

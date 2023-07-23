@@ -1,0 +1,108 @@
+[
+  {
+    "college_image": "https://i.ibb.co/sP0B1nJ/pexels-pixabay-208603.jpg",
+    "college_name": "Greenwood University",
+    "admission_dates": "August 15, 2023",
+    "events": ["Freshers' Party", "Tech Fest", "Cultural Night"],
+    "research_history": "Established in 1956, Greenwood has a rich research legacy.",
+    "sports": ["Football", "Basketball", "Swimming"],
+    "admission_process": "Online application through the college website.",
+    "college_rating": 4.8,
+    "events_details": {
+      "Freshers' Party": "Date: September 1, 2023, Venue: College Auditorium",
+      "Tech Fest": "Date: October 12-14, 2023, Venue: College Campus",
+      "Cultural Night": "Date: November 5, 2023, Venue: College Ground"
+    },
+    "research_works": ["Green Energy Solutions", "Medical Breakthroughs"],
+    "sports_categories": ["Indoor", "Outdoor"]
+  },
+  {
+    "college_image": "https://i.ibb.co/nQrYVZg/pexels-pixabay-247823.jpg",
+    "college_name": "Stellar College",
+    "admission_dates": "July 30, 2023",
+    "events": ["Annual Sports Meet", "Literary Festival", "Alumni Reunion"],
+    "research_history": "Pioneering research in Astrophysics since 1967.",
+    "sports": ["Cricket", "Tennis", "Volleyball"],
+    "admission_process": "Merit-based admission with entrance test for certain programs.",
+    "college_rating": 4.5,
+    "events_details": {
+      "Annual Sports Meet": "Date: September 18-20, 2023, Venue: College Sports Complex",
+      "Literary Festival": "Date: November 8-10, 2023, Venue: College Library",
+      "Alumni Reunion": "Date: December 15, 2023, Venue: College Alumni Hall"
+    },
+    "research_works": ["Space Exploration", "Astrophysics Theories"],
+    "sports_categories": ["Outdoor"]
+  },
+  {
+    "college_image": "https://i.ibb.co/02hzQXm/pexels-yuanda-darian-shen-16361673.jpg",
+    "college_name": "Harmony Institute",
+    "admission_dates": "August 5, 2023",
+    "events": [
+      "Annual Day Celebrations",
+      "Science Exhibition",
+      "Debate Competition"
+    ],
+    "research_history": "Groundbreaking advancements in Environmental Sciences.",
+    "sports": ["Badminton", "Table Tennis", "Chess"],
+    "admission_process": "Personal interview and written test for admissions.",
+    "college_rating": 4.7,
+    "events_details": {
+      "Annual Day Celebrations": "Date: September 25, 2023, Venue: College Auditorium",
+      "Science Exhibition": "Date: October 8-10, 2023, Venue: College Campus",
+      "Debate Competition": "Date: November 12, 2023, Venue: College Seminar Hall"
+    },
+    "research_works": ["Climate Change Mitigation", "Sustainable Development"],
+    "sports_categories": ["Indoor"]
+  },
+  {
+    "college_image": "https://i.ibb.co/sPmy7ym/university-of-cambridge-0.webp",
+    "college_name": "Evergreen University",
+    "admission_dates": "August 20, 2023",
+    "events": ["Cultural Fest", "Sports Gala", "Tech Expo"],
+    "research_history": "A history of groundbreaking discoveries in Computer Science.",
+    "sports": ["Soccer", "Athletics", "Basketball"],
+    "admission_process": "Online application and entrance exam for all programs.",
+    "college_rating": 4.9,
+    "events_details": {
+      "Cultural Fest": "Date: September 15-17, 2023, Venue: College Cultural Center",
+      "Sports Gala": "Date: October 5-7, 2023, Venue: College Sports Complex",
+      "Tech Expo": "Date: November 20-22, 2023, Venue: College Tech Hub"
+    },
+    "research_works": ["Artificial Intelligence", "Cybersecurity Innovations"],
+    "sports_categories": ["Outdoor"]
+  },
+  {
+    "college_image": "https://i.ibb.co/pwcjkKS/university-of-oxford-0.jpg",
+    "college_name": "Trinity College",
+    "admission_dates": "August 10, 2023",
+    "events": ["Music Fest", "Literary Week", "Social Impact Summit"],
+    "research_history": "Decades of excellence in Social Sciences research.",
+    "sports": ["Hockey", "Baseball", "Rugby"],
+    "admission_process": "Merit-based admission with an interview for certain programs.",
+    "college_rating": 4.6,
+    "events_details": {
+      "Music Fest": "Date: September 5-7, 2023, Venue: College Amphitheater",
+      "Literary Week": "Date: October 15-19, 2023, Venue: College Library",
+      "Social Impact Summit": "Date: November 25, 2023, Venue: College Conference Hall"
+    },
+    "research_works": ["Community Development", "Gender Studies"],
+    "sports_categories": ["Outdoor"]
+  },
+  {
+    "college_image": "https://i.ibb.co/JvdQSCm/university-of-paris-sorbonne.jpg",
+    "college_name": "Oxford Academy",
+    "admission_dates": "July 25, 2023",
+    "events": ["Oxford MUN", "Tech Symposium", "Cultural Extravaganza"],
+    "research_history": "Renowned for contributions to Literature and Linguistics.",
+    "sports": ["Golf", "Fencing", "Swimming"],
+    "admission_process": "Entrance exam and interview for all courses.",
+    "college_rating": 4.7,
+    "events_details": {
+      "Oxford MUN": "Date: September 10-12, 2023, Venue: College Seminar Hall",
+      "Tech Symposium": "Date: October 20-22, 2023, Venue: College Tech Hub",
+      "Cultural Extravaganza": "Date: November 15, 2023, Venue: College Amphitheater"
+    },
+    "research_works": ["Linguistic Analysis", "Literary Criticism"],
+    "sports_categories": ["Indoor", "Outdoor"]
+  }
+]
