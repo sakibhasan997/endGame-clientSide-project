@@ -13,7 +13,7 @@ const Home = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("/public/collegeData.json")
+    fetch("http://localhost:5000/threeCard")
       .then((res) => res.json())
       .then((data) => {
         setCards(data);
