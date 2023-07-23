@@ -5,3 +5,11 @@
 ul a.active{
     @apply bg-gradient-to-r from-gray-950 to-pink-500 uppercase
 }
+
+.my_card {
+    transition: all 0.5s ease;
+}
+
+.my_card:hover {
+    transform: scaleY(1.1);
+}

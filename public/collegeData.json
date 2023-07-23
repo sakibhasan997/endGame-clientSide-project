@@ -1,0 +1,65 @@
+[
+    {
+        "college_image": "https://i.ibb.co/sPmy7ym/university-of-cambridge-0.webp",
+        "college_name": "University of Science and Technology",
+        "admission_dates": "August 15 - August 30",
+        "events": ["Science Expo", "Tech Fest", "Annual Sports Meet"],
+        "research_history": "Established in 1965, the university has a rich research tradition.",
+        "sports": ["Basketball", "Football", "Tennis", "Athletics"],
+        "admission_process": "Online application and entrance exam.",
+        "events_details": {
+          "Science Expo": "A showcase of innovative scientific projects.",
+          "Tech Fest": "A platform for students to demonstrate their technical prowess.",
+          "Annual Sports Meet": "An intercollegiate sports event promoting sportsmanship and healthy competition."
+        },
+        "research_works": "Pioneering research in various fields such as physics, biology, and computer science.",
+        "sports_categories": {
+          "Basketball": "Indoor team sport played on a court.",
+          "Football": "Outdoor team sport played on a grass field.",
+          "Tennis": "Individual or doubles sport played on a court with a racket and ball.",
+          "Athletics": "Track and field events such as running, jumping, and throwing."
+        }
+      },
+      {
+        "college_image": "https://i.ibb.co/pwcjkKS/university-of-oxford-0.jpg",
+        "college_name": "Arts and Humanities Institute",
+        "admission_dates": "July 1 - July 31",
+        "events": ["Art Fair", "Literary Symposium", "Cultural Week"],
+        "research_history": "A hub for creativity and scholarly pursuits since 1982.",
+        "sports": ["Swimming", "Chess", "Badminton", "Debating"],
+        "admission_process": "Submission of creative portfolio and interview.",
+        "events_details": {
+          "Art Fair": "An exhibition of diverse art forms and talents.",
+          "Literary Symposium": "Discussions on literary works and ideas.",
+          "Cultural Week": "Celebration of various cultures through performances and exhibitions."
+        },
+        "research_works": "Innovative research in literature, arts, and cultural studies.",
+        "sports_categories": {
+          "Swimming": "Water sport involving different strokes in a pool.",
+          "Chess": "Board game for two players involving strategic thinking.",
+          "Badminton": "Indoor racket sport played on a rectangular court.",
+          "Debating": "Structured argumentation and persuasion contests."
+        }
+      },
+      {
+        "college_image": "https://i.ibb.co/JvdQSCm/university-of-paris-sorbonne.jpg",
+        "college_name": "Business School of Commerce",
+        "admission_dates": "September 1 - September 15",
+        "events": ["Entrepreneurship Summit", "Marketing Conference", "Finance Week"],
+        "research_history": "Nurturing business leaders since 1990.",
+        "sports": ["Golf", "Cricket", "Squash", "Table Tennis"],
+        "admission_process": "CAT/GMAT exam scores and personal interview.",
+        "events_details": {
+          "Entrepreneurship Summit": "Bringing together aspiring entrepreneurs and industry experts.",
+          "Marketing Conference": "Insights into the latest trends and strategies in marketing.",
+          "Finance Week": "Exploring the world of finance through workshops and seminars."
+        },
+        "research_works": "Contributions to the fields of finance, marketing, and management.",
+        "sports_categories": {
+          "Golf": "Precision club-and-ball sport played on a course.",
+          "Cricket": "Bat-and-ball game played between two teams.",
+          "Squash": "Indoor racket sport played in a confined court.",
+          "Table Tennis": "Indoor sport played on a table with small paddles and a ball."
+        }
+      }
+]

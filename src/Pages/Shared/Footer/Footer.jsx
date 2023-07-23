@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="footer py-10 px-20 bg-base-300 text-base-content">
+      <footer className="footer py-10 px-20 bg-gradient-to-r from-gray-950 to-pink-500 uppercase text-white mt-20">
         <img src="/src/assets/white-logo.png" className="w-[186px]" alt="" />
         <div>
           <span className="footer-title">Services</span>
