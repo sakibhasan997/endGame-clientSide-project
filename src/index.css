@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+ul a.active{
+    @apply bg-gradient-to-r from-gray-950 to-pink-500 uppercase
+}

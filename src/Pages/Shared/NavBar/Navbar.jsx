@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProviders";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    Swal.fire({
+      title: "Are you sure to LogOut?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, !",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("LogOut!", "You on to LogOut.", "success");
+        logOut().then().catch();
+      }
+    });
+  };
+
   const navLink = (
     <>
       <li className="text-white">
@@ -19,11 +38,17 @@ const Navbar = () => {
           Admission
         </NavLink>
       </li>
-      <li className="text-white">
-        <NavLink title="My College" to="/myCollege">
-          My College
-        </NavLink>
-      </li>
+      {user ? (
+        <>
+          <li className="text-white">
+            <NavLink title="My College" to="/myCollege">
+              My College
+            </NavLink>
+          </li>
+        </>
+      ) : (
+        <></>
+      )}
 
       {/* {user ?
             <>
@@ -44,7 +69,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-gradient-to-r from-violet-500 to-fuchsia-500 px-20 ">
+      <div className="navbar bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:px-20 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -64,7 +89,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-box w-52">
               {navLink}
             </ul>
           </div>
@@ -76,11 +101,26 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
         <div className="navbar-end">
-          <p className="mx-4 text-white">Sakib Hasan</p>
+          {user && (
+            <p  className="mx-4 text-white" title={user?.email}>
+              Sakib Hasan
+            </p>
+          )}
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src="https://scontent.fjsr8-1.fna.fbcdn.net/v/t39.30808-6/279312602_734737191043200_3706230763934917786_n.jpg?_nc_cat=106&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF0VlUf7SUo0L93l42p5c43LJlARVmc2HcsmUBFWZzYd-HNi0TY6X19i--yzckcDg1jPQ0zjVf5HNKCR9CkEZAq&_nc_ohc=qqSWsrrvXf4AX9c3vsZ&_nc_oc=AQm8WXMa5U1gs_DgzbIpJlVULyEUv5M6eN-p0F-_qaZmhBn7C3iyLM8UMjU2HZT92X0&_nc_ht=scontent.fjsr8-1.fna&oh=00_AfCTNEZ2u7bAddUSgYtpqQnuWMkAwgn5wGKGG8O4ieTNgg&oe=64C0604A" />
+                {user ? (
+                  <>
+                    <img src={user?.photoURL} title={user?.displayName} />
+                  </>
+                ) : (
+                  <>
+                    <img
+                      src="https://scontent.fjsr8-1.fna.fbcdn.net/v/t39.30808-6/279312602_734737191043200_3706230763934917786_n.jpg?_nc_cat=106&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF0VlUf7SUo0L93l42p5c43LJlARVmc2HcsmUBFWZzYd-HNi0TY6X19i--yzckcDg1jPQ0zjVf5HNKCR9CkEZAq&_nc_ohc=JKQ1Pi88r28AX-wVVya&_nc_oc=AQnQ3aBQ-LqjWxTbnHPKZskIrvhyHMz9n7Z8d_Y6QhIF70RNlhBljYoWxgKol2ww3Hk&_nc_ht=scontent.fjsr8-1.fna&oh=00_AfBktRv51kakO8puLzGQVuSeiTcoCd1KX2ZXW6rxTYaTxA&oe=64C25A8A"
+                      alt=""
+                    />
+                  </>
+                )}
               </div>
             </label>
             <ul
@@ -89,11 +129,21 @@ const Navbar = () => {
               <li>
                 <Link className="justify-between">
                   Profile
-                  <span className="badge">New</span>
+                  <span className="badge">{user?.displayName}</span>
                 </Link>
               </li>
               <li>
-                <Link>Logout</Link>
+                {user ? (
+                  <>
+                    <button onClick={handleLogOut} title="LogOut" className="">
+                      Log Out
+                    </button>
+                  </>
+                ) : (
+                  <Link to="/login" title="Login" className="">
+                    Login
+                  </Link>
+                )}
               </li>
             </ul>
           </div>
