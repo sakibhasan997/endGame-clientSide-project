@@ -1,18 +1,15 @@
-# This is my project ( Martial Arts)
+# This is my project ( College Bookings)
 
-- Hosted in Firebase -> [Martial Arts](https://assignment-12-5eb27.web.app)
+- Hosted in Firebase -> [College Bookings](https://endgame-project-26f8c.web.app)
 
 
 
-- Martial Arts
+- College Bookings
 
 
 ## technologies (frameworks, libraries) 
 - react-router-dom
 - firebase
-- axios
-- stripe/react-stripe-js
-- tanstack/react-query
 - react firebase hook
 - tailwind css
 - firebase authentication
@@ -20,7 +17,6 @@
 - react-hook-form
 - react-loader-spinner
 - sweetalert2
-- react-fast-marquee
 - react-helmet-async
 - react-id-swiper
 - react-toastify
