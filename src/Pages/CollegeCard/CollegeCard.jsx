@@ -5,7 +5,7 @@ const CollegeCard = () => {
   const [colleges, setColleges] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/sixCard")
+    fetch("https://end-game-server-side.vercel.app/sixCard")
       .then((res) => res.json())
       .then((data) => setColleges(data));
   }, []);

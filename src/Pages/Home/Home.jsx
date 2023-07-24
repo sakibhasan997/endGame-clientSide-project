@@ -13,7 +13,7 @@ const Home = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/threeCard")
+    fetch("https://end-game-server-side.vercel.app/threeCard")
       .then((res) => res.json())
       .then((data) => {
         setCards(data);

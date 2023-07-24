@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         path: ":id",
         element: <CollegeDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/sixCard/${params.id}`),
+          fetch(`https://end-game-server-side.vercel.app/sixCard/${params.id}`),
       },
     ],
   },
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         path: ":id",
         element: <Details/>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/threeCard/${params.id}`),
+          fetch(`https://end-game-server-side.vercel.app/threeCard/${params.id}`),
       },
     ],
   },
