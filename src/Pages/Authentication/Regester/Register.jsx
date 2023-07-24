@@ -78,7 +78,7 @@ const Register = () => {
       <Helmet>
         <title>College Booking | Register</title>
       </Helmet>
-      <section className="hero ">
+      <section className="hero pt-32">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="bg-white shadow-2xl rounded-xl my-8 py-8 px-10">
             {/* header */}

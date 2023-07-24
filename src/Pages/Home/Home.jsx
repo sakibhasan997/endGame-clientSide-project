@@ -51,9 +51,9 @@ const Home = () => {
                 <p>Sports: {card.sports}</p>
               </div>
               <div className=" w-full mt-8 ">
-                <button className="btn bg-gradient-to-r from-gray-950 to-pink-500 uppercase text-white w-full ">
+                <Link to={`/HomeDetails/${card._id}`} className="btn bg-gradient-to-r from-gray-950 to-pink-500 uppercase text-white w-full ">
                   College Details
-                </button>
+                </Link>
               </div>
             </div>
           ))}

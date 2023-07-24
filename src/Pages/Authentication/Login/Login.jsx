@@ -54,7 +54,7 @@ const Login = () => {
                 <title>College Booking | Login</title>
             </Helmet>
             <div>
-                <div className="hero mb-10">
+                <div className="hero pt-32 mb-10">
                     <div className="  ">
                         <div className="text-center my-8 ">
                             <h1 className="text-5xl font-bold">Please Login Now!</h1>
